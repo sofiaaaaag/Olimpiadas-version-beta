@@ -1,23 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="carrito.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de Compras</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="principal.css">
+  	<link rel="stylesheet" href="carrito.css">
+	<script src="./js/articulos.js"></script>
+  <script src="./js/carritoService.js" defer></script>
+	<script src="./js/carrito.js" defer></script>
+	<title>Carrito</title>
 </head>
 <body>
-    <h1 class="titulo">Carrito de Compras</h1>
-        <div class="container">
-            <div class="vuelos">
-                <p class="sin-productos">Sin productos en el carrito.</p>
-                 <a href="vuelos.html"><button class="comprar">Seguir comprando</button></a>
-                    
-            </div>
-        </div>
-        <script src="js\productos.js"></script>
+  <header>
+		<nav>
+			<div class>
+				<a href="./carrito.html" id="carrito"><img src="./img/icono/shopping-cart.png" alt="icono-carrito"><span id="cuenta-carrito">0</span></a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<p id="carrito-vacio">Ups! El carrito está vacío, <a href="./principal.html">elige algunos productos</a></p>
+		<section id="carrito-container">
+		</section>
+  <section id="totales">
+    <p>Total unidades: <span id="cantidad">0</span></p>
+    <p>Total precio: $<span id="precio">0</span></p>
+    <button disabled>Comprar</button>
+    <button id="reiniciar">Reiniciar</button>
+  </section>
+</main>
+	
 </body>
 </html>
