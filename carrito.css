@@ -1,0 +1,54 @@
+.container{  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+backdrop-filter: blur(10px);
+border-radius: 80px;
+border:1px solid rgba(255, 255, 255, 0.18);
+box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+place-items: center;
+height: 600px;
+width: 1300px;
+margin-top: 100px;
+margin-bottom: 150px;
+background-color: white;
+margin:50px auto 150px auto;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 60px;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#abdbd8;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+   }
+.titulo{
+     text-align: center;
+    font-size: 50px;
+}
+.comprar{
+    transition: 0.3s;
+  font-size: 20px;
+    border: solid 1px silver;
+    background-color: white;
+    color: black;
+    padding: 15px 15px;
+    text-align: center;
+    margin: none;
+    cursor: pointer;
+    border-radius: 30px ;
+
+}
+.comprar:hover{
+     transform: scale(1.2);
+    transition: 0.5s;
+    box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.sin-productos{
+    text-align: center;
+    font-size: 30px;
+}
